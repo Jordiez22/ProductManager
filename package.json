@@ -1,13 +1,25 @@
 {
-  "type": "module",
-  "name": "",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "ProductManager.js",
+  "description": "proyecto con express",
+  "main": "main.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://https://github.com/Jordiez22/ProductManager.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://https://github.com/Jordiez22/ProductManager/issues"
+  },
+  "homepage": "https://github.com/Jordiez22/ProductManager#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
