@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "title": "Ceviche",
+      "description": "Comida",
+      "price": 2000,
+      "thumbnail": "",
+      "code": "4323",
+      "stock": 13
+    },
+    {
+      "id": 2,
+      "title": "Lomito Saltado",
+      "description": "Comida",
+      "price": 100,
+      "thumbnail": "",
+      "code": "123456789",
+      "stock": 20
+    },
+    {
+      "id": 3,
+      "title": "Tacu Tacu",
+      "description": "Comida",
+      "price": 100,
+      "thumbnail": "",
+      "code": "SPR-001",
+      "stock": 5
+    },
+    {
+      "id": 4,
+      "title": "Aji de Gallina",
+      "description": "Comida",
+      "price": 100,
+      "thumbnail": "",
+      "code": "FAN-24",
+      "stock": 30
+    }
+  ]

@@ -1,38 +1,15 @@
-class ProductManager {
-    constructor(products = []) {
-        this.products = products;
-            //valido el id en cero para luego incrementarlo por cada producto creado.
-        this.id = 0;
-    }
-    addProduct(title, description, price, thumbail, code, stock){
-        //configuro que no se repita el campo code y que todos los campos sean obligatorios
-        if (title && description && price && thumbail && code && stock){
-            const existCode = this.products.some(product => product.code === code) // valido que el producto no exista
-            if (existCode){
-                throw new Error("Code ya existe");
-            } else {
-                //inserto al array vacio el nuevo producto con sus propiedades y id autogenerado.
-                this.products.push({ id: ++this.id, title, description, price, thumbail, code, stock});
-            }
-        } else {
-            throw new Error("Faltan campos");
-        }  
-    }
+import {ProductManager} from './src/ProductManager.js'
 
-    getProducts(){
-        console.log(this.products)
-    }
+const FILENAME = './src/products.json'
 
-    getProductById(id){
-        const existID = this.products.find(product => product.id === id);
-        if (existID){
-            console.log("El producto con el id es: ", existID);
-        } else {
-            throw new Error("Not Found")
-        }
-    }
-} 
+const Manager1 = new ProductManager(FILENAME)
 
-const product = new ProductManager()
-product.addProduct("Un producto", "La descripcion", "$100", "El thumbail", "asd123", "45")
-product.getProducts();
+const executeApp = async () => {
+  try {
+    
+  } catch (error) {
+    console.log(error);
+  }
+}
+executeApp()
+export {Manager1}
