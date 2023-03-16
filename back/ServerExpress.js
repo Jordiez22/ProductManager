@@ -1,5 +1,5 @@
-const Contenedor = require("../ProductorManager.js");
-const c = new Contenedor("../ProductSs.txt");
+const Contenedor = require("../ProductManager.js");
+const c = new Contenedor("../Products.json");
 const express = require("express");
 const app = express();
 const PORT = 8080;
